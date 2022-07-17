@@ -2,6 +2,9 @@ import React from "react";
 import { v4 as uuid } from "uuid";
 
 function ItemForm(props) {
+  const [name, setName] = useState("");
+  const [ category, setCategory ] = useState("Produce");
+  
   return (
     <form className="NewItem">
       <label>
